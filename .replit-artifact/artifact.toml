@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "FlyRank Backend Assignment 1"
+description = "A minimal in-memory FastAPI task API for the FlyRank W2 A1 CRUD assignment."
+version = "1.0.0"
+id = "artifacts/flyrank-backend-assignment-1"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 8000
+
+[services.development]
+run = "pnpm --filter @workspace/flyrank-backend-assignment-1 run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/flyrank-backend-assignment-1", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/flyrank-backend-assignment-1/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "8000"
+BASE_PATH = "/"
