@@ -62,3 +62,9 @@ content-type: application/json
 `docs/swagger-ui.jpg` is a screenshot captured from the running
 `http://127.0.0.1:8000/docs` page after this verification. It shows the root,
 health, and all five task CRUD operations with their visible summaries.
+
+## Public submission repository
+
+The verified source, tests, evidence, and Swagger screenshot are published at:
+
+<https://github.com/NiknaxTheGreek/flyrank-w2-a1-task-api>

@@ -22,9 +22,13 @@ optional/stretch work are explicitly excluded.
 | README submission documentation | Complete | README includes purpose, one-command run path, endpoint table, real `curl -i` output, Swagger screenshot, test command, and in-memory limitation. |
 | No prohibited extras | Complete | No database, persistence, auth, Docker, AI, AI Rematch, or optional features were added. |
 
-## External submission note
+## Public repository and honest commit history
 
-A public GitHub repository cannot be created or published from this workspace
-without the repository owner's connected GitHub account. The local work is
-committed honestly; publishing the final commits to a public GitHub repository
-remains a manual submission action.
+The verified submission snapshot is public at
+[github.com/NiknaxTheGreek/flyrank-w2-a1-task-api](https://github.com/NiknaxTheGreek/flyrank-w2-a1-task-api).
+
+The local `main` branch contains the honest implementation history, including
+the port-8000 runtime change, the exact W2 A1 API/test change, and the
+documentation/evidence change. The public repository was populated through the
+authenticated GitHub API because direct Git transport could not use the
+connector-managed OAuth credential.
